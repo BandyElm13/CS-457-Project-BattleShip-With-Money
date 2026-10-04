@@ -4,7 +4,7 @@
         -Serialialize Format: Structured Json
         -Framing Rule 4 byte big endian length
         00 00 00 2a {"type":"MOVE","x":3,"y":7,"playerId":"p1"}
-        00 00 00 00 {"type": "PICK","playerId": "player1","data": {"Ships": {"ship1"}: [[],[],[],[]], "ship2": [[],[],[],[]], etc}}
+        00 00 00 00  {"type":"PICK","playerId":"p1","data":{"ships":{"ship1":[[0,0],[0,1]],"ship2":[[3,3]], "ship3":[[0,0],[0,1]], "ship4":[[0,0],[0,1]]}}}
     
     2.2(Application Message Types)
     Clients
@@ -12,7 +12,7 @@
         JOIN, Client-Server, A client joins the lobby
         PICK, Client-Server, Client adds there ships to there haft of the board
         MOVE, Client-Server, Client chooses an idex to attack
-        REJOIN, Client to Server, client disconnected, timmer server hold player data for a timmer length, if cl;ient rejoins and the name is the same to the servers held id, connection is reatbliched otehr is ERROR ois triggered
+        REJOIN, Client to Server, client disconnected, timmer server hold player data for a timmer length, if client rejoins and the name is the same to the servers held id, connection is reatbliched otehr is ERROR ois triggered
         DISCONECT, Client-Server, client connection is serveres and triggers Rejoin on the server side
 
     Server
