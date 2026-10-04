@@ -5,4 +5,4 @@ tHIS IS a quick diagram for how i want my battleship multiplayer to go, the goal
 ![My Diagram](/Images/Tylers-Diagram.PNG)
 
 **Mermaid Diagram**
-![Mermaid.ai](/Images/Battleship%20ULM%20diagram.png)
+![Diagram](/Images/Battleship%20ULM%20diagram.png)
