@@ -16,10 +16,11 @@
         DISCONECT, Client-Server, client connection is serveres and triggers Rejoin on the server side
 
     Server
-        PICK-ACCEPTED, Server-Client, Server accepets teh clients placment
-        PICK-INVALID, Server-Client, Server found an issues with client input(out of bounds index, type error(dopuble instead of an integer))
+        (NOT GOING TO USE)PICK-ACCEPTED, Server-Client, Server accepets teh clients placment
+        (NOT GOING TO USE )PICK-INVALID, Server-Client, Server found an issues with client input(out of bounds index, type
         START-ROUND, Server-Client, Loads board with bothe Clients data for ship placments
-        YOUR-TURN, Server-client, prompts the current clienmt to make a move 
+        YOUR-TURN, Server-client, prompts the current clienmt to make a moveplacments
+        OPPONENT_TURN, Server-client, prompts theenemy to make a move
         HIT/MISS. Server-Client, server verifies if client hit the others a ship on teh other feild or not
         MONEY, Server-Client, If HIT/MISS comes back as true for the server the server updates the clients money by 500
         STAR, Server-Client, At the end of a round the winning clients stars is upgraded by + 1
