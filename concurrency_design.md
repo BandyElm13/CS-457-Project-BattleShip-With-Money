@@ -50,3 +50,10 @@
         c. if someone has three star server will broaadcast Game_Over with the winner and final scores in a ScoadBoard stroiing object broadcasted to both clients, before sending the cleints back to lobby. and teh data from that game is clear and (MAYBY in a fiuture realease there is permant scores associated with cleints, but iof i did do this, then i would bneed a database mand accually have to implient hashing algorithms, for proper data security)
 
         d. broadcast() encodes each message once and sends the same bytes to both clients back to back so they alwasy show identical scores
+
+
+
+
+**Extra Info**
+    1. Server takes in IP, Port as Argugments
+    2. Clients connect to the servers port, and IP
