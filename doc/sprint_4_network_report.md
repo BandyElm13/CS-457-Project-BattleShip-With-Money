@@ -5,16 +5,16 @@
 **Game server hostname:** `server.Harvey.edu` → `192.168.20.100`
 
 ---
-
+s
 ## 1. Network Topology
 
-![Battleship CML topology](Images/BattleShip-Topology.jpg)
+![Battleship CML topology](/Images/BattleShip-Topology.jpg)
 
 | Node | Role | Router interface | Subnet | IP address |
 |------|------|------------------|--------|------------|
 | TH-Client1 | Game client 1 | `Gi0/1` (192.168.10.1) | 192.168.10.0/24 | DHCP lease |
 | TH-Client2 | Game client 2 | `Gi0/2` (192.168.11.1) | 192.168.11.0/24 | DHCP lease |
-| TH-Server | Game server | `Gi0/3` (192.168.20.1) | 192.168.20.0/24 | Static `192.168.20.100` |
+| TH-Server | Game server | `Gi0/3` (192.168.20.1) | 192.16s8.20.0/24 | Static `192.168.20.100` |
 | ext-conn | External Connector (NAT) | `Gi0/0` (192.168.255.80, via DHCP) | CML NAT bridge | n/a |
 | Cisco Router 1 (R1) | Gateway, DHCP and DNS server | all of the above | n/a | n/a |
 
