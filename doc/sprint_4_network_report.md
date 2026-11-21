@@ -24,7 +24,7 @@
 
 `show ip interface brief` confirms every interface is `up/up` with the addresses in the table above.
 
-![show ip interface brief](Images/ShowIpintbr.jpg)
+![show ip interface brief](/Images/ShowIpintbr.jpg)
 
 ---
 
@@ -32,7 +32,7 @@
 
 `show ip route` lists the three directly connected game subnets plus the default route (`S* 0.0.0.0/0 via 192.168.255.1`) pointing out `Gi0/0` to the External Connector.
 
-![show ip route](Images/showiproute.jpg)
+![show ip route](/Images/showiproute.jpg)
 
 ---
 
@@ -40,7 +40,7 @@
 
 R1 hands out addresses to both clients from its two DHCP pools. `show ip dhcp binding` shows the active leases.
 
-![show ip dhcp binding](Images/showipdhcpbinding.jpg)
+![show ip dhcp binding](/Images/showipdhcpbinding.jpg)
 
 ---
 
@@ -48,7 +48,7 @@ R1 hands out addresses to both clients from its two DHCP pools. `show ip dhcp bi
 
 TH-Client1 (`192.168.10.x`) pings the game server at `192.168.20.100` with 0% packet loss, showing that R1 routes traffic between the client and server subnets.
 
-![ping 192.168.20.100](Images/pinging.jpg)
+![ping 192.168.20.100](/Images/pinging.jpg)
 
 ---
 
@@ -60,13 +60,13 @@ R1 acts as the authoritative DNS server (`ip dns server` plus `ip host server.Ha
 nslookup -type=A server.Harvey.edu
 ```
 
-![nslookup server.Harvey.edu](Images/DNS_Lookup.jpg)
+![nslookup server.Harvey.edu](/Images/DNS_Lookup.jpg)
 
 ---
 
 ## 7. Wireshark DNS Capture
 
-**File:** [`sprint_4_dns_lookup.pcap`](sprint_4_dns_lookup.pcap)
+**File:** [`sprint_4_dns_lookup.pcap`](/sprint_4_dns_lookup.pcap)
 **Captured on:** the TH-Client1 ↔ R1 link (`E0` ↔ `Gi0/1`)
 
 | # | Source | Destination | Protocol | Info |
